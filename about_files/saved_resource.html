@@ -1,0 +1,1608 @@
+
+<!-- saved from url=(0011)about:blank -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="https://fonts.googleapis.com/" rel="preconnect"><link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin=""><link id="builder-default-fonts" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&amp;family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet"><link id="builder-font-roboto" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet"><link id="builder-font-raleway" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet"><link id="builder-font-poppins" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet"><style id="css-utility-pulsating-play-btn"> /* Pulsating Play Button
+------------------------------*/
+.pulsating-play-btn {
+  width: 94px;
+  height: 94px;
+  background: radial-gradient(var(--accent-color) 50%, color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.pulsating-play-btn:before {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  animation-delay: 0s;
+  animation: pulsate-play-btn 2s;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid color-mix(in srgb, var(--accent-color), transparent 30%);
+  top: -15%;
+  left: -15%;
+  background: rgba(198, 16, 0, 0);
+}
+
+.pulsating-play-btn:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.pulsating-play-btn:hover:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 200;
+  animation: none;
+  border-radius: 0;
+}
+
+.pulsating-play-btn:hover:after {
+  border-left: 15px solid var(--accent-color);
+  transform: scale(20);
+}
+
+@keyframes pulsate-play-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+ </style><style id="builder-fonts-styles"></style><link rel="stylesheet" href="https://builder.bootstrapmade.com/static/vendors/bootstrap/css/bootstrap.css?v=10"><link rel="stylesheet" href="https://builder.bootstrapmade.com/static/vendors/bootstrap-icons/bootstrap-icons.css?v=10"><link id="vendor-css-swiper" rel="stylesheet" href="https://builder.bootstrapmade.com/static/vendors/swiper/swiper-bundle.min.css?v=10"><link id="vendor-css-glightbox" rel="stylesheet" href="https://builder.bootstrapmade.com/static/vendors/glightbox/css/glightbox.min.css?v=10"><style id="builder-vendors-styles"></style><style id="builder-general-css">:root {  --default-font: Roboto, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; --heading-font: Raleway; --nav-font: Poppins;--background-color: #322929; --default-color: #fafafa; --heading-color: #ffffff; --accent-color: #18d26e; --surface-color: #4e4040; --contrast-color: #000000; --nav-color: #ffffff; --nav-hover-color: #18d26e; --nav-mobile-background-color: #504242; --nav-dropdown-background-color: #504242; --nav-dropdown-color: #5b5b5b; --nav-dropdown-hover-color: #000000; scroll-behavior: smooth; }body {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: var(--default-font);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+} section, .section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 60px 0;
+  scroll-margin-top: 100px;
+  overflow: clip;
+}
+
+@media (max-width: 1199px) {
+  section, .section {
+    scroll-margin-top: 66px;
+  }
+} .section-title {
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  position: relative;
+}
+
+.section-title h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: var(--accent-color);
+  margin: 4px 10px;
+}
+
+.section-title div {
+  color: var(--heading-color);
+  margin: 0;
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: var(--heading-font);
+}
+ .page-title {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  position: relative;
+}
+.page-title .heading {
+  padding: 160px 0 80px 0;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+.page-title .heading h1 {
+  font-size: 38px;
+  font-weight: 700;
+}
+.page-title nav {
+  background-color: color-mix(in srgb, var(--default-color), transparent 90%);
+  padding: 20px 0;
+}
+.page-title nav ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+.page-title nav ol li + li {
+  padding-left: 10px;
+}
+.page-title nav ol li + li::before {
+  content: "/";
+  display: inline-block;
+  padding-right: 10px;
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+} .widgets-container {
+  background-color: var(--surface-color);
+  padding: 30px;
+  margin: 60px 0 30px 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.widget-title {
+  color: var(--heading-color);
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.widget-item {
+  margin-bottom: 40px;
+}
+
+.widget-item:last-child {
+  margin-bottom: 0;
+}
+</style><style id="builder-general-styles"></style><style id="builder-color-presets-css">[data-colorpreset="cp-light-background"], .light-background { --background-color: #4e4040; --surface-color: #6a5757; } [data-colorpreset="cp-dark-background"], .dark-background { --background-color: #45818e; --default-color: #ffffff; --heading-color: #ffffff; --surface-color: #589fae; --contrast-color: #000000; } </style><style id="header-style"> .header {
+  color: var(--default-color);
+  transition: all 0.5s;
+  z-index: 997;
+  background-color: var(--background-color);
+}
+
+.header .topbar {
+  background-color: var(--background-color);
+  height: 40px;
+  padding: 0;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+
+.header .topbar .contact-info i {
+  font-style: normal;
+  color: var(--contrast-color);
+}
+
+.header .topbar .contact-info i a, .header .topbar .contact-info i span {
+  padding-left: 5px;
+  color: var(--contrast-color);
+}
+
+@media (max-width: 575px) {
+  .header .topbar .contact-info i a, .header .topbar .contact-info i span {
+    font-size: 13px;
+  }
+}
+
+.header .topbar .contact-info i a {
+  line-height: 0;
+  transition: 0.3s;
+}
+
+.header .topbar .contact-info i a:hover {
+  color: var(--contrast-color);
+  text-decoration: underline;
+}
+
+.header .topbar .social-links a {
+  color: color-mix(in srgb, var(--contrast-color), transparent 40%);
+  line-height: 0;
+  transition: 0.3s;
+  margin-left: 20px;
+}
+
+.header .topbar .social-links a:hover {
+  color: var(--contrast-color);
+}
+
+.header .branding {
+  min-height: 60px;
+  padding: 10px 0;
+}
+
+.header .logo {
+  line-height: 1;
+}
+
+.header .logo img {
+  max-height: 36px;
+  margin-right: 8px;
+}
+
+.header .logo h1 {
+  font-size: 30px;
+  margin: 0;
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+.scrolled .header {
+  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+}
+
+.scrolled .header .topbar {
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+ </style><style id="header-colors"> .header { --background-color: #444444; --nav-color: #ffffff; --nav-hover-color: #18d26e; --nav-mobile-background-color: #4e4040; --nav-dropdown-background-color: #4e4040; --nav-dropdown-color: #5b5b5b; --nav-dropdown-hover-color: #000000;  } .scrolled .header { --background-color: #ffffff; --nav-color: #000000; --nav-hover-color: #000000;  }  </style><style id="nav-style"> /* Desktop Navigation */
+@media (min-width: 1200px) {
+  .navmenu {
+    padding: 0;
+  }
+  .navmenu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  .navmenu li {
+    position: relative;
+  }
+  .navmenu > ul > li {
+    white-space: nowrap;
+    padding: 15px 14px;
+  }
+  .navmenu > ul > li:last-child {
+    padding-right: 0;
+  }
+  .navmenu a, .navmenu a:focus {
+    color: var(--nav-color);
+    font-size: 15px;
+    padding: 0 2px;
+    font-family: var(--nav-font);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: 0.3s;
+    position: relative;
+  }
+  .navmenu a i, .navmenu a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+    transition: 0.3s;
+  }
+  .navmenu > ul > li > a:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: var(--nav-hover-color);
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  .navmenu a:hover:before, .navmenu li:hover > a:before, .navmenu .active:before {
+    visibility: visible;
+    width: 25px;
+  }
+  .navmenu li:hover > a, .navmenu .active, .navmenu .active:focus {
+    color: var(--nav-hover-color);
+  }
+  .navmenu .dropdown ul {
+    margin: 0;
+    padding: 10px 0;
+    background: var(--nav-dropdown-background-color);
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    left: 14px;
+    top: 130%;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 4px;
+    z-index: 99;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  }
+  .navmenu .dropdown ul li {
+    min-width: 200px;
+  }
+  .navmenu .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 15px;
+    text-transform: none;
+    color: var(--nav-dropdown-color);
+  }
+  .navmenu .dropdown ul a i {
+    font-size: 12px;
+  }
+  .navmenu .dropdown ul a:hover, .navmenu .dropdown ul .active:hover, .navmenu .dropdown ul li:hover > a {
+    color: var(--nav-dropdown-hover-color);
+  }
+  .navmenu .dropdown:hover > ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+  }
+  .navmenu .dropdown .dropdown ul {
+    top: 0;
+    left: -90%;
+    visibility: hidden;
+  }
+  .navmenu .dropdown .dropdown:hover > ul {
+    opacity: 1;
+    top: 0;
+    left: -100%;
+    visibility: visible;
+  }
+}
+/* Mobile Navigation */
+@media (max-width: 1199px) {
+  .mobile-nav-toggle {
+    color: var(--nav-color);
+    font-size: 28px;
+    line-height: 0;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  .navmenu {
+    padding: 0;
+    z-index: 9997;
+  }
+  .navmenu ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    inset: 60px 20px 20px 20px;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 6px;
+    background-color: var(--nav-mobile-background-color);
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    box-shadow: none;
+    overflow-y: auto;
+    transition: 0.3s;
+    z-index: 9998;
+  }
+  .navmenu a, .navmenu a:focus {
+    color: var(--nav-dropdown-color);
+    padding: 10px 20px;
+    font-family: var(--nav-font);
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+  .navmenu a i, .navmenu a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  }
+  .navmenu a i:hover, .navmenu a:focus i:hover {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+  }
+  .navmenu a:hover, .navmenu .active, .navmenu .active:focus {
+    color: var(--nav-dropdown-hover-color);
+  }
+  .navmenu .active i, .navmenu .active:focus i {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    transform: rotate(180deg);
+  }
+  .navmenu .dropdown ul {
+    position: static;
+    display: none;
+    z-index: 99;
+    padding: 10px 0;
+    margin: 10px 20px;
+    background-color: var(--nav-dropdown-background-color);
+    transition: all 0.5s ease-in-out;
+  }
+  .navmenu .dropdown ul ul {
+    background-color: rgba(33, 37, 41, 0.1);
+  }
+  .navmenu .dropdown > .dropdown-active {
+    display: block;
+    background-color: rgba(33, 37, 41, 0.03);
+  }
+  .mobile-nav-active {
+    overflow: hidden;
+  }
+  .mobile-nav-active .mobile-nav-toggle {
+    color: #fff;
+    position: absolute;
+    font-size: 32px;
+    top: 15px;
+    right: 15px;
+    margin-right: 0;
+    z-index: 9999;
+  }
+  .mobile-nav-active .navmenu {
+    position: fixed;
+    overflow: hidden;
+    inset: 0;
+    background: rgba(33, 37, 41, 0.8);
+    transition: 0.3s;
+  }
+  .mobile-nav-active .navmenu > ul {
+    display: block;
+  }
+}
+ </style><style id="footer-style"> .footer {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.footer .social-links {
+  margin: 0 0 30px 0;
+}
+
+.footer .social-links a {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  line-height: 1;
+  margin: 0 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  text-decoration: none;
+}
+
+.footer .copyright {
+  padding-top: 25px;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.footer .credits {
+  font-size: 13px;
+  padding-top: 5px;
+}
+ </style><style id="scrolltop-style"> .scroll-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: -15px;
+  z-index: 99999;
+  background-color: var(--accent-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.scroll-top i {
+  font-size: 24px;
+  color: var(--contrast-color);
+  line-height: 0;
+}
+
+.scroll-top:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: var(--contrast-color);
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 15px;
+}
+ </style><style id="section-4HmQk6cDxH-style"> .hero {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.hero .container {
+  position: relative;
+  z-index: 3;
+}
+.hero h2 {
+  margin: 0;
+  font-size: 64px;
+  font-weight: 700;
+}
+.hero p {
+  margin: 5px 0 0 0;
+  font-size: 26px;
+}
+.hero p span {
+  letter-spacing: 1px;
+  border-bottom: 2px solid var(--accent-color);
+}
+.hero .social-links {
+  margin-top: 25px;
+}
+.hero .social-links a {
+  background-color: color-mix(in srgb, var(--default-color), transparent 90%);
+  color: var(--default-color);
+  font-size: 14px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+.hero .social-links a:hover {
+  background-color: var(--accent-color);
+}
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 32px;
+  }
+  .hero p {
+    font-size: 20px;
+  }
+} </style><style id="section-Z5w3nslHXD-style"> .resume .resume-title {
+  color: var(--heading-color);
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid var(--accent-color);
+  position: relative;
+}
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin-bottom: 10px;
+}
+.resume .resume-item h5 {
+  font-size: 16px;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: var(--background-color);
+  border: 2px solid var(--accent-color);
+} </style><style id="section-2O410xA7mX-style"> .stats i {
+  background-color: var(--surface-color);
+  color: var(--accent-color);
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+  width: 54px;
+  height: 54px;
+  font-size: 24px;
+  border-radius: 50px;
+  border: 2px solid var(--background-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.stats .stats-item {
+  background-color: var(--surface-color);
+  margin-top: -27px;
+  padding: 30px 30px 25px 30px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  z-index: 0;
+}
+.stats .stats-item span {
+  font-size: 36px;
+  display: block;
+  font-weight: 700;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+.stats .stats-item p {
+  padding: 0;
+  margin: 0;
+  font-family: var(--heading-font);
+  font-size: 16px;
+} </style><style id="section-GVPGirfywA-style"> .skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+.skills .progress .skill {
+  color: var(--heading-color);
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: var(--heading-font);
+}
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+.skills .progress-bar-wrap {
+  background: color-mix(in srgb, var(--default-color), transparent 90%);
+  height: 10px;
+}
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: var(--accent-color);
+} </style><style id="section-9c4vwHVERJ-style"> .interests .features-item {
+  background-color: var(--surface-color);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  transition: 0.3s;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  position: relative;
+}
+.interests .features-item i {
+  font-size: 32px;
+  padding-right: 10px;
+  line-height: 0;
+}
+.interests .features-item h3 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+}
+.interests .features-item h3 a {
+  color: var(--heading-color);
+  transition: 0.3s;
+}
+.interests .features-item:hover {
+  border-color: var(--accent-color);
+}
+.interests .features-item:hover h3 a {
+  color: var(--accent-color);
+} </style><style id="section-6jChDmcada-style"> .testimonials .testimonials-carousel, .testimonials .testimonials-slider {
+  overflow: hidden;
+}
+.testimonials .testimonial-item {
+  box-sizing: content-box;
+  min-height: 320px;
+}
+.testimonials .testimonial-item .testimonial-img {
+  width: 90px;
+  border-radius: 50%;
+  margin: -40px 0 0 40px;
+  position: relative;
+  z-index: 2;
+  border: 6px solid var(--background-color);
+}
+.testimonials .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 45px;
+}
+.testimonials .testimonial-item h4 {
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin: 0 0 0 45px;
+}
+.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
+  color: color-mix(in srgb, var(--accent-color), transparent 50%);
+  font-size: 26px;
+  line-height: 0;
+}
+.testimonials .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+.testimonials .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+  transform: scale(-1, -1);
+}
+.testimonials .testimonial-item p {
+  font-style: italic;
+  margin: 0 15px 0 15px;
+  padding: 20px 20px 60px 20px;
+  background: var(--surface-color);
+  border-radius: 6px;
+  position: relative;
+  z-index: 1;
+}
+.testimonials .swiper-wrapper {
+  height: auto;
+}
+.testimonials .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: var(--background-color);
+  opacity: 1;
+  border: 1px solid var(--accent-color);
+}
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+} </style><style id="section-u4460lqLPn-style"> .about-2 .content h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+.about-2 .content ul {
+  list-style: none;
+  padding: 0;
+}
+.about-2 .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.about-2 .content ul strong {
+  margin-right: 10px;
+}
+.about-2 .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: var(--accent-color);
+  line-height: 0;
+} </style><style id="builder-components-styles"></style><style id="builder-custom-styles"></style><style id="section-GVPGirfywA-colors"> #section-GVPGirfywA .skills, #section-GVPGirfywA section { --background-color: #134f5c;  } </style><style id="section-9c4vwHVERJ-colors"> #section-9c4vwHVERJ .interests, #section-9c4vwHVERJ section { --background-color: #eeaaaa;  } </style><style id="builder-colors-styles"></style><link id="builder-main-style" rel="stylesheet" href="https://builder.bootstrapmade.com/assets/css/builder.css?v=17151050"><style id="builder-header-offsets"> .builder-add-components-btn { margin-top: 152.5px; } .page-title ~ .builder-add-components-btn {  margin-top: 40px; } .builder-add-placeholder { margin-top: 152.5px; } .page-title ~ .builder-add-placeholder, .builder-section-wrap + .builder-add-placeholder { margin-top: 40px; } .page-title .builder-section-hover-left, .page-title .builder-section-hover-right {  top: 127.5px; } .page-title .builder-section-hover-top  {  top: 112.5px; };  </style><style id="builder-priority-styles"></style></head><body class="builder-mode about-page"><a href="https://builder.bootstrapmade.com/demo/Personal/#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a><header id="header" class="header fixed-top" data-builder="header" data-js=" scrolled scroll-up-sticky">
+
+  <div class="topbar d-flex align-items-center dark-background">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">mohanoli005@gmail.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span contenteditable="true" spellcheck="false">9818145</span></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="https://builder.bootstrapmade.com/demo/Personal/#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://builder.bootstrapmade.com/demo/Personal/#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://builder.bootstrapmade.com/demo/Personal/#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://builder.bootstrapmade.com/demo/Personal/#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </div><!-- End Top Bar -->
+
+  <div class="branding d-flex align-items-cente">
+
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+      <a href="https://builder.bootstrapmade.com/demo/Personal/index.html" class="logo d-flex align-items-center" contenteditable="true" spellcheck="false">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="https://builder.bootstrapmade.com/static/img/logo.png" alt=""> -->
+        <h1 class="sitename" contenteditable="true" spellcheck="false">Mohan Oli</h1> 
+      </a>
+
+      <nav id="navmenu" class="navmenu" data-builder="navmenu" data-js=" mobile-nav-toggle mobile-nav-dropdown">
+  <ul>
+    <li><a href="https://builder.bootstrapmade.com/demo/Personal/index.html" class="active" contenteditable="true" spellcheck="false">Home</a></li>
+    <li contenteditable="true" spellcheck="false"><a href="https://builder.bootstrapmade.com/demo/Personal/about.html" contenteditable="true" spellcheck="false">About</a></li>
+    <li><a href="https://builder.bootstrapmade.com/demo/Personal/resume.html" contenteditable="true" spellcheck="false">Resume</a></li>
+    <li><a href="https://builder.bootstrapmade.com/demo/Personal/services.html">Services</a></li>
+    <li><a href="https://builder.bootstrapmade.com/demo/Personal/portfolio.html">Portfolio</a></li>
+    <li class="dropdown"><a href="https://builder.bootstrapmade.com/demo/Personal/#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+      <ul>
+        <li><a href="https://builder.bootstrapmade.com/demo/Personal/#">Dropdown 1</a></li>
+        <li class="dropdown"><a href="https://builder.bootstrapmade.com/demo/Personal/#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="https://builder.bootstrapmade.com/demo/Personal/#">Deep Dropdown 1</a></li>
+            <li><a href="https://builder.bootstrapmade.com/demo/Personal/#">Deep Dropdown 2</a></li>
+            <li><a href="https://builder.bootstrapmade.com/demo/Personal/#">Deep Dropdown 3</a></li>
+            <li><a href="https://builder.bootstrapmade.com/demo/Personal/#">Deep Dropdown 4</a></li>
+            <li><a href="https://builder.bootstrapmade.com/demo/Personal/#">Deep Dropdown 5</a></li>
+          </ul>
+        </li>
+        <li><a href="https://builder.bootstrapmade.com/demo/Personal/#">Dropdown 2</a></li>
+        <li><a href="https://builder.bootstrapmade.com/demo/Personal/#">Dropdown 3</a></li>
+        <li><a href="https://builder.bootstrapmade.com/demo/Personal/#">Dropdown 4</a></li>
+      </ul>
+    </li>
+    <li><a href="https://builder.bootstrapmade.com/demo/Personal/contact.html">Contact</a></li>
+  </ul>
+  <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+</nav>
+
+    </div>
+
+  </div>
+  
+</header><main class="main" id="page-0CFcI0wBqw" data-name="about">
+  
+  <div class="page-title" data-aos="fade" data-builder="page-title">
+  <div class="heading">
+    <div class="container">
+      <div class="row d-flex justify-content-center text-center">
+        <div class="col-lg-8">
+          <h1 contenteditable="true" spellcheck="false">About Me<div></div></h1>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="breadcrumbs">
+    <div class="container">
+      <ol>
+        <li contenteditable="true" spellcheck="false"><a href="https://builder.bootstrapmade.com/demo/Personal/index.html" contenteditable="true" spellcheck="false">Home</a></li>
+        <li class="current" contenteditable="true" spellcheck="false">About</li>
+      </ol>
+    </div>
+  </nav>
+</div><slot type="page-title"></slot>
+  
+  <div id="section-u4460lqLPn" class="builder-section-wrap position-relative "><section id="about-2" class="about-2 section" data-builder="section">
+
+  <slot type="section-title"></slot>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4 justify-content-center">
+      <div class="col-lg-4">
+        <img src="https://builder.bootstrapmade.com/static/img/template/Personal/profile-img.jpg" class="img-fluid" alt="">
+      </div>
+      <div class="col-lg-8 content">
+        <h2 contenteditable="true" spellcheck="false">BBM Student &amp; Quality Assurance(Q.A).</h2>
+        <p class="fst-italic py-3" contenteditable="true" spellcheck="false">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+        </p>
+        <div class="row">
+          <div class="col-lg-6">
+            <ul>
+              <li contenteditable="true" spellcheck="false"><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span contenteditable="true" spellcheck="false">17 April 2000</span></li>
+              <li contenteditable="true" spellcheck="false"><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span contenteditable="true" spellcheck="false">olimohan.com.np</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>9818145290</span></li>
+              <li contenteditable="true" spellcheck="false"><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span contenteditable="true" spellcheck="false">Kathmandu, Nepal</span></li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
+              <li contenteditable="true" spellcheck="false"><i class="bi bi-chevron-right"></i> <strong contenteditable="true" spellcheck="false">Degree:</strong> <span contenteditable="true" spellcheck="false">Bachelor</span></li>
+              <li contenteditable="true" spellcheck="false"><i class="bi bi-chevron-right"></i> <strong contenteditable="true" spellcheck="false">Email:</strong> <span contenteditable="true" spellcheck="false">mohanoli005@gmail.com<br></span></li>
+              <li contenteditable="true" spellcheck="false"><i class="bi bi-chevron-right"></i> <strong contenteditable="true" spellcheck="false">Freelance:</strong> <span>Available</span></li>
+            </ul>
+          </div>
+        </div>
+        <p class="py-3" contenteditable="true" spellcheck="false">I am a Business Management student with a focus on understanding the dynamics of modern enterprises. Currently, I am working as a Quality Assurance specialist at an IT company, where I ensure the highest standards of product quality and reliability.</p>
+      </div>
+    </div>
+
+  </div>
+
+</section></div><div id="section-2O410xA7mX" class="builder-section-wrap position-relative " data-js=" purecounter"><section id="stats" class="stats section" data-builder="section">
+
+  <slot type="section-title"></slot>
+  
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+  
+    <div class="row gy-4">
+    
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-emoji-smile"></i>
+        <div class="stats-item">
+          <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0" class="purecounter" data-no-editable="true">232</span>
+          <p>Happy Clients</p>
+        </div>
+      </div><!-- End Stats Item -->
+    
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-journal-richtext"></i>
+        <div class="stats-item">
+          <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="0" class="purecounter" data-no-editable="true">521</span>
+          <p>Projects</p>
+        </div>
+      </div><!-- End Stats Item -->
+    
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-headset"></i>
+        <div class="stats-item">
+          <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="0" class="purecounter" data-no-editable="true">1463</span>
+          <p contenteditable="true" spellcheck="false">Hours Of Support</p>
+        </div>
+      </div><!-- End Stats Item -->
+    
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-people"></i>
+        <div class="stats-item">
+          <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="0" class="purecounter" data-no-editable="true">15</span>
+          <p contenteditable="true" spellcheck="false">Hard Workers</p>
+        </div>
+      </div><!-- End Stats Item -->
+    
+    </div>
+  
+  </div>
+
+</section></div><div id="section-GVPGirfywA" class="builder-section-wrap position-relative " data-js=" skills-animation"><section id="skills" class="skills section" data-builder="section" data-colorpreset="cp-dark-background">
+
+  <slot type="section-title"></slot>
+  
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+  
+    <div class="row skills-content skills-animation">
+  
+      <div class="col-lg-6">
+  
+        <div class="progress">
+          <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+          </div>
+        </div><!-- End Skills Item -->
+  
+        <div class="progress">
+          <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+          </div>
+        </div><!-- End Skills Item -->
+  
+        <div class="progress">
+          <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+          </div>
+        </div><!-- End Skills Item -->
+  
+      </div>
+  
+      <div class="col-lg-6">
+  
+        <div class="progress">
+          <span class="skill"><span>PHP</span> <i class="val">80%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+          </div>
+        </div><!-- End Skills Item -->
+  
+        <div class="progress">
+          <span class="skill" contenteditable="true" spellcheck="false"><span contenteditable="true" spellcheck="false">WordPress/CMS</span> <i class="val">90%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+          </div>
+        </div><!-- End Skills Item -->
+  
+        <div class="progress">
+          <span class="skill" contenteditable="true" spellcheck="false"><span contenteditable="true" spellcheck="false">Photoshop</span> <i class="val">55%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%;"></div>
+          </div>
+        </div><!-- End Skills Item -->
+  
+      </div>
+  
+    </div>
+  
+  </div>
+
+</section></div><div id="section-9c4vwHVERJ" class="builder-section-wrap position-relative "><section id="interests" class="interests section" data-builder="section">
+
+  <div class="container section-title" data-aos="fade-up" data-builder="section-title">
+  <h2 contenteditable="true" spellcheck="false">Features</h2>
+  <div><span>I'm</span> <span class="description-title">interested in</span></div>
+</div><slot type="section-title"></slot>
+  
+  <div class="container">
+  
+    <div class="row gy-4">
+  
+      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="features-item">
+          <i class="bi bi-eye" style="color: #ffbb2c;"></i>
+          <h3><a href="https://builder.bootstrapmade.com/demo/Personal/" class="stretched-link">Lorem Ipsum</a></h3>
+        </div>
+      </div><!-- End Feature Item -->
+  
+      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="features-item">
+          <i class="bi bi-infinity" style="color: #5578ff;"></i>
+          <h3><a href="https://builder.bootstrapmade.com/demo/Personal/" class="stretched-link">Dolor Sitema</a></h3>
+        </div>
+      </div><!-- End Feature Item -->
+  
+      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="features-item">
+          <i class="bi bi-mortarboard" style="color: #e80368;"></i>
+          <h3 contenteditable="true" spellcheck="false"><a href="https://builder.bootstrapmade.com/demo/Personal/" class="stretched-link" contenteditable="true" spellcheck="false">Sed perspiciatis</a></h3>
+        </div>
+      </div><!-- End Feature Item -->
+  
+      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="features-item">
+          <i class="bi bi-nut" style="color: #e361ff;"></i>
+          <h3><a href="https://builder.bootstrapmade.com/demo/Personal/" class="stretched-link">Magni Dolores</a></h3>
+        </div>
+      </div><!-- End Feature Item -->
+  
+      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="500">
+        <div class="features-item">
+          <i class="bi bi-shuffle" style="color: #47aeff;"></i>
+          <h3><a href="https://builder.bootstrapmade.com/demo/Personal/" class="stretched-link">Nemo Enim</a></h3>
+        </div>
+      </div><!-- End Feature Item -->
+  
+      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="600">
+        <div class="features-item">
+          <i class="bi bi-star" style="color: #ffa76e;"></i>
+          <h3><a href="https://builder.bootstrapmade.com/demo/Personal/" class="stretched-link">Eiusmod Tempor</a></h3>
+        </div>
+      </div><!-- End Feature Item -->
+  
+      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="700">
+        <div class="features-item">
+          <i class="bi bi-x-diamond" style="color: #11dbcf;"></i>
+          <h3><a href="https://builder.bootstrapmade.com/demo/Personal/" class="stretched-link">Midela Teren</a></h3>
+        </div>
+      </div><!-- End Feature Item -->
+  
+      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="800">
+        <div class="features-item">
+          <i class="bi bi-camera-video" style="color: #4233ff;"></i>
+          <h3><a href="https://builder.bootstrapmade.com/demo/Personal/" class="stretched-link">Pira Neve</a></h3>
+        </div>
+      </div><!-- End Feature Item -->
+  
+      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="900">
+        <div class="features-item">
+          <i class="bi bi-command" style="color: #b2904f;"></i>
+          <h3><a href="https://builder.bootstrapmade.com/demo/Personal/" class="stretched-link">Dirada Pack</a></h3>
+        </div>
+      </div><!-- End Feature Item -->
+  
+      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1000">
+        <div class="features-item">
+          <i class="bi bi-dribbble" style="color: #b20969;"></i>
+          <h3><a href="https://builder.bootstrapmade.com/demo/Personal/" class="stretched-link">Moton Ideal</a></h3>
+        </div>
+      </div><!-- End Feature Item -->
+  
+      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1100">
+        <div class="features-item">
+          <i class="bi bi-activity" style="color: #ff5828;"></i>
+          <h3 contenteditable="true" spellcheck="false"><a href="https://builder.bootstrapmade.com/demo/Personal/" class="stretched-link" contenteditable="true" spellcheck="false">Verdo Park</a></h3>
+        </div>
+      </div><!-- End Feature Item -->
+  
+      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1200">
+        <div class="features-item">
+          <i class="bi bi-brightness-high" style="color: #29cc61;"></i>
+          <h3><a href="https://builder.bootstrapmade.com/demo/Personal/" class="stretched-link">Flavor Nivelanda</a></h3>
+        </div>
+      </div><!-- End Feature Item -->
+      
+    </div>
+  
+  </div>
+
+</section></div><div id="section-6jChDmcada" class="builder-section-wrap position-relative " data-js=" init-swiper"><section id="testimonials" class="testimonials section" data-builder="section">
+
+  <div class="container section-title" data-aos="fade-up" data-builder="section-title">
+  <h2>Testimonials</h2>
+  <div><span>Check my</span> <span class="description-title">Testimonials</span></div>
+</div><slot type="section-title"></slot>
+  
+  <div class="container" data-aos="fade-up" data-aos-delay="100" data-no-editable="true">
+  
+    <div class="swiper init-swiper swiper-initialized swiper-horizontal swiper-backface-hidden" data-speed="600" data-delay="5000" data-breakpoints="{ &quot;320&quot;: { &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 40 }, &quot;1200&quot;: { &quot;slidesPerView&quot;: 3, &quot;spaceBetween&quot;: 40 } }">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed" : 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          },
+          "breakpoints": {
+            "320": {
+              "slidesPerView": 1,
+              "spaceBetween": 40
+            },
+            "1200": {
+              "slidesPerView": 3,
+              "spaceBetween": 20
+            }
+          }
+        }
+      </script>
+      <div class="swiper-wrapper" id="swiper-wrapper-b4f46d103636db388" aria-live="off" style="transition-duration: 600ms; transform: translate3d(-757.333px, 0px, 0px);">
+    
+        <!-- End testimonial item -->
+    
+        <!-- End testimonial item -->
+    
+        <!-- End testimonial item -->
+    
+        <!-- End testimonial item -->
+    
+        <!-- End testimonial item -->
+    
+      <div class="swiper-slide" role="group" aria-label="3 / 5" data-swiper-slide-index="2" style="width: 358.667px; margin-right: 20px;">
+          <div class="testimonial-item">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img src="https://builder.bootstrapmade.com/static/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+             <h3>Jena Karlis</h3>
+            <h4>Store Owner</h4>
+          </div>
+        </div><div class="swiper-slide swiper-slide-prev" role="group" aria-label="2 / 5" data-swiper-slide-index="1" style="width: 358.667px; margin-right: 20px;">
+          <div class="testimonial-item">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid  malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img src="https://builder.bootstrapmade.com/static/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+             <h3>Sara Wilsson</h3>
+            <h4>Designer</h4>
+          </div>
+        </div><div class="swiper-slide swiper-slide-active" role="group" aria-label="5 / 5" data-swiper-slide-index="4" style="width: 358.667px; margin-right: 20px;">
+          <div class="testimonial-item">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img src="https://builder.bootstrapmade.com/static/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+             <h3>John Larson</h3>
+            <h4>Entrepreneur</h4>
+          </div>
+        </div><div class="swiper-slide swiper-slide-next" role="group" aria-label="1 / 5" data-swiper-slide-index="0" style="width: 358.667px; margin-right: 20px;">
+          <div class="testimonial-item" "="">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img src="https://builder.bootstrapmade.com/static/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+             <h3>Saul Goodman</h3>
+            <h4>Ceo &amp; Founder</h4>
+          </div>
+        </div><div class="swiper-slide" role="group" aria-label="4 / 5" data-swiper-slide-index="3" style="width: 358.667px; margin-right: 20px;">
+          <div class="testimonial-item">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img src="https://builder.bootstrapmade.com/static/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+             <h3>Matt Brandon</h3>
+            <h4>Freelancer</h4>
+          </div>
+        </div></div>
+      <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 5" aria-current="true"></span></div>
+    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div> 
+  
+  </div>
+
+</section></div><div class="justify-content-center builder-add-components-btn"><a href="https://builder.bootstrapmade.com/demo/Personal/" class="builder-add-section-btn d-flex align-items-center justify-content-center" title="Add New Section Here"><i class="bi bi-plus"></i></a></div><slot type="sections"></slot>
+    
+</main><main class="main d-none" id="page-D8rU4QCMUs" data-name="resume">
+  
+  <div class="page-title" data-aos="fade" data-builder="page-title">
+  <div class="heading">
+    <div class="container">
+      <div class="row d-flex justify-content-center text-center">
+        <div class="col-lg-8">
+          <h1>Resume</h1>
+          <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="breadcrumbs">
+    <div class="container">
+      <ol>
+        <li><a href="https://builder.bootstrapmade.com/demo/Personal/index.html">Home</a></li>
+        <li class="current">Resume</li>
+      </ol>
+    </div>
+  </nav>
+</div>
+
+<slot type="page-title"></slot>
+  
+  <div id="section-Z5w3nslHXD" class="builder-section-wrap position-relative "><section id="resume" class="resume section" data-builder="section">
+
+  <slot type="section-title"></slot>
+  
+  <div class="container">
+  
+    <div class="row">
+  
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="resume-title">Sumary</h3>
+  
+        <div class="resume-item pb-0">
+          <h4 class="">Brandon Johnson</h4>
+          <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+          <ul>
+            <li>Portland par 127,Orlando, FL</li>
+            <li>(123) 456-7891</li>
+            <li>alice.barkley@example.com</li>
+          </ul>
+        </div><!-- Edn Resume Item -->
+    
+        <h3 class="resume-title">Education</h3>
+        <div class="resume-item">
+          <h4>Master of Fine Arts &amp; Graphic Design</h4>
+          <h5>2015 - 2016</h5>
+          <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+          <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+        </div><!-- Edn Resume Item -->
+  
+        <div class="resume-item">
+          <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
+          <h5>2010 - 2014</h5>
+          <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+          <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+        </div><!-- Edn Resume Item -->
+  
+      </div>
+  
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="resume-title">Professional Experience</h3>
+        <div class="resume-item">
+          <h4>Senior graphic design specialist</h4>
+          <h5>2019 - Present</h5>
+          <p><em>Experion, New York, NY </em></p>
+          <ul>
+            <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
+            <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
+            <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
+            <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+          </ul>
+        </div><!-- Edn Resume Item -->
+  
+        <div class="resume-item">
+          <h4>Graphic design specialist</h4>
+          <h5>2017 - 2018</h5>
+          <p><em>Stepping Stone Advertising, New York, NY</em></p>
+          <ul>
+            <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
+            <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+            <li>Recommended and consulted with clients on the most appropriate graphic design</li>
+            <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+          </ul>
+        </div><!-- Edn Resume Item -->
+        
+      </div>
+  
+    </div>
+  
+  </div>
+
+</section></div><div class="justify-content-center builder-add-components-btn"><a href="https://builder.bootstrapmade.com/demo/Personal/" class="builder-add-section-btn d-flex align-items-center justify-content-center" title="Add New Section Here"><i class="bi bi-plus"></i></a></div><slot type="sections"></slot>
+    
+</main><main class="main d-none" id="page-sjhdfjhdsjh" data-name="index">
+  
+  <slot type="page-title"></slot>
+  
+  <div id="section-4HmQk6cDxH" class="builder-section-wrap position-relative " data-js=" typed"><section id="hero" class="hero section" data-builder="section">
+
+  <img src="https://builder.bootstrapmade.com/static/img/template/Personal/hero-bg.jpg" alt="" data-aos="fade-in">
+  
+  <div class="container" data-aos="zoom-out" data-aos-delay="100">
+    <h2 contenteditable="true" spellcheck="false">Mohan Oli</h2>
+    <p data-no-editable="true">I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">De</span><span class="typed-cursor" aria-hidden="true">|</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true">|</span><span class="typed-cursor typed-cursor--blink" data-no-editable="true"></span></p>
+      <div class="social-links">
+        <a href="https://builder.bootstrapmade.com/demo/Personal/#"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://builder.bootstrapmade.com/demo/Personal/#"><i class="bi bi-facebook"></i></a>
+        <a href="https://builder.bootstrapmade.com/demo/Personal/#"><i class="bi bi-instagram"></i></a>
+        <a href="https://builder.bootstrapmade.com/demo/Personal/#"><i class="bi bi-linkedin"></i></a>
+      </div>
+  </div>
+
+</section></div><div class="justify-content-center builder-add-components-btn"><a href="https://builder.bootstrapmade.com/demo/Personal/" class="builder-add-section-btn d-flex align-items-center justify-content-center" title="Add New Section Here"><i class="bi bi-plus"></i></a></div><slot type="sections"></slot>
+    
+</main><footer id="footer" class="footer" data-builder="footer" data-colorpreset="cp-dark-background">
+  <div class="container">
+    <h3 class="sitename" contenteditable="true" spellcheck="false">Mohan Oli</h3>
+    <p class="" contenteditable="true" spellcheck="false">PLease visit my social media&nbsp;</p>
+    <div class="social-links d-flex justify-content-center">
+      <a href="https://builder.bootstrapmade.com/demo/Personal/"><i class="bi bi-twitter-x"></i></a>
+      <a href="https://builder.bootstrapmade.com/demo/Personal/"><i class="bi bi-facebook"></i></a>
+      <a href="https://builder.bootstrapmade.com/demo/Personal/"><i class="bi bi-instagram"></i></a>
+      <a href="https://builder.bootstrapmade.com/demo/Personal/"><i class="bi bi-skype"></i></a>
+      <a href="https://builder.bootstrapmade.com/demo/Personal/"><i class="bi bi-linkedin"></i></a>
+    </div>
+    <div class="container">
+      <div class="copyright">
+        <span>Copyright</span> <strong class="px-1 sitename">Mohan Oli</strong> <span>All Rights Reserved</span>
+      </div>
+      
+    </div>
+  </div>
+</footer><script id="builder-vendors-bootstrap-js" src="https://builder.bootstrapmade.com/static/vendors/bootstrap/js/bootstrap.bundle.min.js?v=10"></script><script id="builder-vendors-aos-js" src="https://builder.bootstrapmade.com/static/vendors/aos/aos.js?v=10"></script><script id="vendor-js-typed.js" src="https://builder.bootstrapmade.com/static/vendors/typed.js/typed.umd.js?v=10"></script><script id="vendor-js-purecounter" src="https://builder.bootstrapmade.com/static/vendors/purecounter/purecounter_vanilla.js?v=10"></script><script id="vendor-js-waypoints" src="https://builder.bootstrapmade.com/static/vendors/waypoints/noframework.waypoints.js?v=10"></script><script id="vendor-js-swiper" src="https://builder.bootstrapmade.com/static/vendors/swiper/swiper-bundle.min.js?v=10"></script><script id="vendor-js-glightbox" src="https://builder.bootstrapmade.com/static/vendors/glightbox/js/glightbox.min.js?v=10"></script><script id="vendor-js-typed.js" src="https://builder.bootstrapmade.com/static/vendors/typed.js/typed.umd.js?v=10"></script><script id="vendor-js-typed.js" src="https://builder.bootstrapmade.com/static/vendors/typed.js/typed.umd.js?v=10"></script><script id="vendor-js-typed.js" src="https://builder.bootstrapmade.com/static/vendors/typed.js/typed.umd.js?v=10"></script><script id="vendor-js-typed.js" src="https://builder.bootstrapmade.com/static/vendors/typed.js/typed.umd.js?v=10"></script><script id="builder-vendors-js"></script><script id="js-scroll-top" class="components-js">(()=>{ /**
+ * Scroll top button
+ */
+let scrollTop = document.querySelector('.scroll-top');
+function toggleScrollTop() {
+  if( scrollTop ) {
+    window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+  }
+}
+scrollTop.addEventListener('click', (e) => {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+window.addEventListener('load', toggleScrollTop);
+document.addEventListener('scroll', toggleScrollTop);
+})();</script><script id="js-glightbox" class="components-js">(()=>{ /**
+* Initiate glightbox
+*/
+const glightbox = GLightbox({
+  selector: '.glightbox'
+});
+})();</script><script id="js-typed" class="components-js">(()=>{ /**
+ * Init typed.js
+ */
+const selectTyped = document.querySelector('.typed');
+if( selectTyped ) {
+  let typed_strings = selectTyped.getAttribute('data-typed-items');
+  typed_strings = typed_strings.split(',');
+  new Typed('.typed', {
+    strings:typed_strings,
+    loop: true,
+    typeSpeed: 100,
+    backSpeed: 50,
+    backDelay: 2000
+  });
+}
+})();</script><script id="js-scrolled" class="components-js">(()=>{ /**
+ * Apply .scrolled class to the body as the page is scrolled down
+ */
+function toggleScrolled() {
+  const selectBody = document.querySelector('body');
+  const selectHeader = document.querySelector('#header');
+  if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
+  window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
+}
+
+document.addEventListener('scroll', toggleScrolled);
+window.addEventListener('load', toggleScrolled);
+})();</script><script id="js-scroll-up-sticky" class="components-js">(()=>{ /**
+ * Scroll up sticky header to headers with .scroll-up-sticky class
+ */
+let lastScrollTop = 0;
+window.addEventListener('scroll', function() {
+  const selectHeader = document.querySelector('#header');
+  if (!selectHeader.classList.contains('scroll-up-sticky')) return;
+  
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  
+  if (scrollTop > lastScrollTop && scrollTop > selectHeader.offsetHeight) {
+    selectHeader.style.setProperty('position', 'sticky', 'important');
+    selectHeader.style.top = `-${header.offsetHeight + 50}px`;
+  } else if (scrollTop > selectHeader.offsetHeight) {
+    selectHeader.style.setProperty('position', 'sticky', 'important');
+    selectHeader.style.top = "0";
+  } else {
+    selectHeader.style.removeProperty('top');
+    selectHeader.style.removeProperty('position');
+  }
+  lastScrollTop = scrollTop;
+});
+})();</script><script id="js-mobile-nav-toggle" class="components-js">(()=>{ /**
+* Mobile nav toggle
+*/
+const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
+function mobileNavToogle() {
+  document.querySelector('body').classList.toggle('mobile-nav-active');
+  mobileNavToggleBtn.classList.toggle('bi-list');
+  mobileNavToggleBtn.classList.toggle('bi-x');
+}
+if( mobileNavToggleBtn) {
+  mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
+}
+
+/**
+* Hide mobile nav on same-page/hash links
+*/
+document.querySelectorAll('#navmenu a').forEach(navmenu => {
+  navmenu.addEventListener('click', () => {
+    if( document.querySelector('.mobile-nav-active') ) {
+      mobileNavToogle();
+    }
+  });
+
+});
+})();</script><script id="js-mobile-nav-dropdown" class="components-js">(()=>{ /**
+* Toggle mobile nav dropdowns
+*/
+document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
+  navmenu.addEventListener('click', function(e) {
+    e.preventDefault();
+    this.parentNode.classList.toggle('active');
+    this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
+    e.stopImmediatePropagation();
+  });
+});
+})();</script><script id="js-purecounter" class="components-js">(()=>{ /**
+ * Initiate Pure Counter
+ */
+new PureCounter();
+})();</script><script id="js-skills-animation" class="components-js">(()=>{ /**
+ * Animate the skills items on reveal
+ */
+let skillsAnimation = document.querySelectorAll('.skills-animation');
+skillsAnimation.forEach((item) => {
+  new Waypoint({
+    element: item,
+    offset: '80%',
+    handler: function(direction) {
+      let progress = item.querySelectorAll('.progress .progress-bar');
+      progress.forEach(el => {
+        el.style.width = el.getAttribute('aria-valuenow') + '%';
+      });
+    }
+  });
+});
+})();</script><script id="js-init-swiper" class="components-js">(()=>{ /**
+ * Init swiper sliders
+ */
+function initSwiper() {
+  document.querySelectorAll(".init-swiper").forEach(function (swiperElement) {
+    let config = JSON.parse(
+      swiperElement.querySelector(".swiper-config").innerHTML.trim()
+    );
+
+    if (swiperElement.classList.contains("swiper-tab")) {
+      initSwiperWithCustomPagination(swiperElement, config);
+    } else {
+      new Swiper(swiperElement, config);
+    }
+  });
+}
+
+window.addEventListener("load", initSwiper);
+})();</script><script id="builder-js"></script><style data-typed-js-cursor-css="true">
+        .typed-cursor{
+          opacity: 1;
+        }
+        .typed-cursor.typed-cursor--blink{
+          animation: typedjsBlink 0.7s infinite;
+          -webkit-animation: typedjsBlink 0.7s infinite;
+                  animation: typedjsBlink 0.7s infinite;
+        }
+        @keyframes typedjsBlink{
+          50% { opacity: 0.0; }
+        }
+        @-webkit-keyframes typedjsBlink{
+          0% { opacity: 1; }
+          50% { opacity: 0.0; }
+          100% { opacity: 1; }
+        }
+      </style></body></html>
